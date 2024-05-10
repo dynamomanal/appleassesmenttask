@@ -1,0 +1,133 @@
+/* styles.css */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Your custom CSS */
+
+/* Style the header */
+.background {
+    background-color:black
+}
+.header {
+  background-color: #030000;
+  color: rgb(245,245,247);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+}
+
+/* Style the menu items */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+/* Style the search and shopping icons */
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.ribbon-content-wrapper {
+text-align: center;
+background-color: rgb(29 29 31);
+}
+.typography-ribbon-avail {
+font-size: 17px;
+line-height: 1.2353641176;
+font-weight: 400;
+letter-spacing: -0.022em;
+font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.ribbon-content {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 980px;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  unicode-bidi: isolate;
+}
+.welcome__video-headline {
+  font-size: 28px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  letter-spacing: .007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+
+}
+.rising-heading {
+  animation: riseAnimation 1.5s ease-in-out;
+}
+@keyframes riseAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
